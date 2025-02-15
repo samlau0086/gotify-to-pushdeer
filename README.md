@@ -10,10 +10,12 @@ This project listens to messages from Gotify and forwards them to PushDeer.
 ## How to Use
 
 1. Clone the repository:
-   ```bash
-   git clone https://git.geekmt.com/sam/gotify-to-pushdeer.git
 
- 2. Build the Docker image:
+```bash
+git clone https://github.com/samlau0086/gotify-to-pushdeer.git
+```
+
+2. Build the Docker image:
 
 ```bash
 docker build -t gotify-to-pushdeer .

@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  gotify-to-pushdeer:
+    image: samlau0086/gotify-to-pushdeer:latest
+    container_name: gotify-pushdeer-container
+    env_file:
+      - .env
+    restart: always

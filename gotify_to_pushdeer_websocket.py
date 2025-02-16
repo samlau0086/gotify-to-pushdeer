@@ -9,7 +9,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # 从环境变量中读取配置
-GOTIFY_URL = 'wss://' + os.getenv("GOTIFY_URL") + '/stream'
+GOTIFY_PROTOCAL = 'wss://' if os.getenv("GOTIFY_PROTOCAL") == 'HTTPS' else 'ws://'
+GOTIFY_URL = GOTIFY_PROTOCAL + os.getenv("GOTIFY_URL") + '/stream'
 GOTIFY_CLIENT_TOKEN = os.getenv("GOTIFY_CLIENT_TOKEN")
 PUSHDEER_URL = os.getenv("PUSHDEER_URL")
 PUSHDEER_KEY = os.getenv("PUSHDEER_KEY")
